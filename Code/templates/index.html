@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stance Detection</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+<body>
+
+    <!-- Image and text -->
+<nav class="navbar navbar-light justify-content-center" style="background-color: rgb(31, 53, 75);">
+    <a class="navbar-brand" href="#" style="color: white;">
+        <h1>Stance Detection - Group 15</h1>
+    </a>
+  </nav>
+
+<div class="container justify-content-center" style="margin-top: 7%;">
+    <form method="post">
+        <div class="form-group">
+            <label for="tweet"><strong>Enter your tweet (text):</strong></label>
+            <textarea type="text" class="form-control" id="tweet" name="tweet" required>{{input_tweet}}</textarea>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <div class="form-group">
+                    <label for="target"><strong>Select a target:</strong></label>
+                    <select class="form-control" id="target" name="target" required>
+                        <option value="Atheism">Atheism</option>
+                        <option value="Climate Change is a Real Concern">Climate Change is a Real Concern</option>
+                        <option value="Feminist Movement">Feminist Movement</option>
+                        <option value="Hillary Clinton">Hillary Clinton</option>
+                        <option value="Legalization of Abortion">Legalization of Abortion</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col">
+                <div class="form-group">
+                    <label for="model"><strong>Select a model:</strong></label>
+                    <select class="form-control" id="model" name="model" required>
+                        <option value="svm">SVM with BERT</option>
+                        <option value="svm_electra">SVM with ELECTRA</option>
+                        <option value="lstm">LSTM with BERT</option>
+                        <option value="lstm_electra">LSTM with ELECTRA</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="text-center mt-4">
+            <button type="submit" class="btn" style="background-color: rgb(31, 53, 75); color: white;">Submit</button>
+        </div>
+    </form>
+
+    {% if result %}
+        <div class="mt-4 text-center">
+            <h2 style="color: {{ color }};">Stance: {{ result }}</h2>
+        </div>
+    {% endif %}
+</div>
+
+<!-- Bootstrap JS and dependencies (optional) -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+</body>
+</html>

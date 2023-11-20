@@ -1,5 +1,7 @@
 from sentence_transformers import SentenceTransformer
 
-def encode(tweets):
+def encode(tweets, electra=False):
     model = SentenceTransformer('bert-base-nli-mean-tokens')
-    return model.encode(tweets)
+    if electra:
+        model = SentenceTransformer('ddobokki/electra-small-nli-sts')
+    return [*map(model.encode, tweets)]
