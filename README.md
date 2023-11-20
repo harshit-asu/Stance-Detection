@@ -8,7 +8,7 @@ Harshit Allumolu (hallumol@asu.edu)
 
 Pravalika Gollapudi
 
-Sri Naga Sushma Jyothula
+Sri Naga Sushma Jyothula (sjyothul@asu.edu)
 
 Sumeet Choudhary
 
