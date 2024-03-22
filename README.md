@@ -7,7 +7,11 @@ Stance detection for tweets is an essential task in natural language processing 
 The project follows the fundamental phases of any machine learning project, emphasizing the Training and Testing phases. It employs a structured architecture to handle complexities effectively. The main components of the architecture include data processing, generating embeddings using transformer models, and training/testing classifiers.
 
 ### Architecture
+
+#### Training Architecture
 ![Training Architecture](https://github.com/harshit-asu/Stance-Detection/blob/main/Visualization/Training.png)
+
+#### Testing Architecture
 ![Testing Architecture](https://github.com/harshit-asu/Stance-Detection/blob/main/Visualization/Testing.png)
 
 ## Models
@@ -37,8 +41,13 @@ The Stance Detection web application provides an intuitive interface for users t
 
 ## Examples
 
+#### Output: Against
 ![Example 1: Against](https://github.com/harshit-asu/Stance-Detection/blob/main/Visualization/Against_UI.png)
+
+#### Output: Favor
 ![Example 2: Favor](https://github.com/harshit-asu/Stance-Detection/blob/main/Visualization/Favor_UI.png)
+
+#### Output: Neutral
 ![Example 3: Neutral](https://github.com/harshit-asu/Stance-Detection/blob/main/Visualization/Neutral_UI.png)
 
 ## Team Members: 
