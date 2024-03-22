@@ -38,8 +38,8 @@ The Stance Detection web application provides an intuitive interface for users t
 ## Examples
 
 ![Example 1: Against](https://github.com/harshit-asu/Stance-Detection/blob/main/Visualization/Against_UI.png)
-![Example 2: Favor]([images/example2.png](https://github.com/harshit-asu/Stance-Detection/blob/main/Visualization/Favor_UI.png))
-![Example 3: Neutral]([images/example3.png](https://github.com/harshit-asu/Stance-Detection/blob/main/Visualization/Neutral_UI.png))
+![Example 2: Favor](https://github.com/harshit-asu/Stance-Detection/blob/main/Visualization/Favor_UI.png)
+![Example 3: Neutral](https://github.com/harshit-asu/Stance-Detection/blob/main/Visualization/Neutral_UI.png)
 
 ## Team Members: 
 
